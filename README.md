@@ -1,2 +1,2 @@
 # Edufy
-website for imaginary cloud hosting company
+responsive website for imaginary cloud hosting company using HTML and CSS
