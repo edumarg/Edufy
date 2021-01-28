@@ -278,3 +278,26 @@ a {
 .input-group .btn {
   margin: 4px;
 }
+
+/* cards */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card-header,
+.card-body {
+  padding: 2rem 3rem;
+}
+
+.card-primary .card-header {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.card-secondary .card-header {
+  color: white;
+  background-color: var(--color-secondary);
+}
