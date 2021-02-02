@@ -21,6 +21,11 @@ html {
   font-size: 62.5%;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 /*typografy */
 
 body {
@@ -591,4 +596,38 @@ a {
 .collapsible-expanded .collapsible-content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/* block */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block-header {
+  text-align: center;
+}
+
+.block-title {
+  margin-top: 0;
+}
+
+.block-dark {
+  color: #7b858b;
+  background-color: black;
+}
+
+.block-dark .block-title {
+  color: white;
+}
+
+.block-skewed-rigth {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block-skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
