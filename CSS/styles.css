@@ -4,6 +4,7 @@
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
+  --color-dark: #393939;
   --color-headings: #1b0760;
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -190,6 +191,10 @@ a {
 
 .icon-container-accent {
   background-color: var(--color-accent);
+}
+
+.icon-container-dark {
+  background-color: var(--color-dark);
 }
 
 .icon-small {
@@ -545,4 +550,45 @@ a {
   .callout .grid-cols-2 {
     grid-template-columns: 1fr auto;
   }
+}
+
+/* collapsible */
+
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible-title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.collapsible-icon {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible-icon:hover {
+  cursor: pointer;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible-expanded .collapsible-icon {
+  transform: rotate(0);
+}
+
+.collapsible-expanded .collapsible-content {
+  max-height: 100vh;
+  opacity: 1;
 }
