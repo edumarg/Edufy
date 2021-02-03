@@ -6,9 +6,17 @@
         <p class="hero-tagline">Deploy your websites in less than 60 seconds</p>
         <a href="#" class="btn btn-accent btn-streach">Get Started</a>
       </div>
-      <div>
-        <img class="hero-img" src="./img/banner.png" alt="EduFy banner" />
-      </div>
+      <picture>
+        <source
+          type="image/webp"
+          srcset="./img/banner.webp 1x, ./img/banner@2x.webp 2x"
+        />
+        <source
+          type="image/png"
+          srcset="./img/banner.png 1x, ./img/banner@2x.png 2x"
+        />
+        <img class="hero-img" src="./img/banner.png" alt="hero banner" />
+      </picture>
     </div>
   </div>
 </section>
