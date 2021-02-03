@@ -375,9 +375,25 @@ a {
   letter-spacing: 1px;
 }
 
+.plan {
+  transition: all 0.3s ease-out;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
 .plan .list-item {
   letter-spacing: 1px;
   margin-bottom: 2rem;
+}
+
+.plan-popular {
+  transform: scale(1.1);
+}
+
+.plan-popular:hover {
+  transform: scale(1.2);
 }
 
 .plan-popular .card-header {
@@ -775,5 +791,23 @@ a {
 @media screen and (min-width: 1024px) {
   .block-domain-prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+/* Plans Block */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-plans .card {
+    max-width: 500px;
+    margin: 0 0;
   }
 }
