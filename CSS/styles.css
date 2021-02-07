@@ -811,3 +811,37 @@ a {
     margin: 0 0;
   }
 }
+
+/* features block */
+
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature-media {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-media-body {
+  margin-left: 0;
+}
+
+.feature-media-title {
+  margin: 1rem 0;
+}
+
+.feature-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature-media {
+    order: 2;
+  }
+}
