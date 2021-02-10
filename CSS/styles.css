@@ -150,7 +150,6 @@ a {
 /* lists */
 
 .list {
-  color: var(--color-headings);
   list-style: none;
   padding-left: 0;
 }
@@ -785,6 +784,7 @@ a {
 }
 
 .block-domain-prices {
+  color: var(--color-headings);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 6rem);
@@ -862,10 +862,14 @@ a {
   }
 }
 
-/*control panel blcok */
+/*control panel block */
+
+.control-panel-img > img {
+  width: 100%;
+}
 
 .control-panel .grid {
-  justify-items: center;
+  justify-items: stretch;
 }
 
 @media screen and (min-width: 768px) {
