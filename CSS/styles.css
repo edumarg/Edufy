@@ -36,7 +36,7 @@ html {
 body {
   color: var(--color-body);
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   line-height: 1.5;
 }
 
@@ -446,7 +446,7 @@ a {
 }
 
 .media-body {
-  margin-left: 2rem;
+  margin: 0 2rem;
 }
 
 .media-image {
@@ -863,6 +863,11 @@ a {
 }
 
 /*control panel blcok */
+
+.control-panel .grid {
+  justify-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .control-panel .grid {
     grid-template-columns: 50% 50%;
