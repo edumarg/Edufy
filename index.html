@@ -21,6 +21,7 @@
     />
     <link rel="stylesheet" href="./CSS/normalize.css" />
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>EduFy Cloud services</title>
   </head>
   <body>
@@ -42,7 +43,6 @@
         </ul>
       </nav>
     </header>
-
     <section class="block block-dark block-skewed-left hero">
       <div class="container">
         <div class="grid grid-cols-2">
@@ -68,7 +68,7 @@
       </div>
     </section>
 
-    <section class="container block block-domain">
+    <section class="container block block-domain" data-aos="zoom-in">
       <header class="block-header">
         <h2 class="block-title">Starting at $10 per month</h2>
         <p>
@@ -97,7 +97,7 @@
     </section>
 
     <section class="container block block-plans">
-      <div class="grid grid-cols-3">
+      <div class="grid grid-cols-3" data-aos="fade-up">
         <div class="card card-secondary plan">
           <header class="card-header">
             <h3 class="plan-name">Entry</h3>
@@ -167,7 +167,7 @@
       </header>
       <body>
         <article class="grid grid-cols-2 feature">
-          <div class="media feature-media">
+          <div class="media feature-media" data-aos="fade-right">
             <div class="media-image">
               <span class="icon-container">
                 <svg class="icon icon-primary">
@@ -185,7 +185,7 @@
               <a href="#" class="link-arrow">Learn More</a>
             </div>
           </div>
-          <picture>
+          <picture data-aos="zoom-in-left">
             <source
               type="image/webp"
               srcset="./img/easy.webp 1x, ./img/easy@2x.webp 2x"
@@ -198,7 +198,7 @@
           </picture>
         </article>
         <article class="grid grid-cols-2 feature">
-          <div class="media feature-media">
+          <div class="media feature-media" data-aos="fade-right">
             <div class="media-image">
               <span class="icon-container">
                 <svg class="icon icon-primary">
@@ -218,7 +218,7 @@
               <a href="#" class="link-arrow">Learn More</a>
             </div>
           </div>
-          <picture>
+          <picture data-aos="fade-left">
             <source
               type="image/webp"
               srcset="./img/fast.webp 1x, ./img/fast@2x.webp 2x"
@@ -231,7 +231,7 @@
           </picture>
         </article>
         <article class="grid grid-cols-2 feature">
-          <div class="media feature-media">
+          <div class="media feature-media" data-aos="fade-up">
             <div class="media-image">
               <span class="icon-container">
                 <svg class="icon icon-primary">
@@ -249,7 +249,7 @@
               <a href="#" class="link-arrow">Learn More</a>
             </div>
           </div>
-          <picture>
+          <picture data-aos="fade-down">
             <source
               type="image/webp"
               srcset="./img/wordpress.webp 1x, ./img/wordpress@2x.webp 2x"
@@ -266,7 +266,7 @@
           </picture>
         </article>
         <article class="grid grid-cols-2 feature">
-          <div class="media feature-media">
+          <div class="media feature-media" data-aos="flip-right">
             <div class="media-image">
               <span class="icon-container">
                 <svg class="icon icon-primary">
@@ -286,7 +286,7 @@
               <a href="#" class="link-arrow">Learn More</a>
             </div>
           </div>
-          <picture>
+          <picture data-aos="flip-up">
             <source
               type="image/webp"
               srcset="./img/support.webp 1x, ./img/support@2x.webp 2x"
@@ -311,7 +311,7 @@
       </header>
       <div class="container">
         <div class="grid grid-cols-2">
-          <picture class="control-panel-img">
+          <picture class="control-panel-img" data-aos="fade-right">
             <source
               type="image/webp"
               srcset="./img/ipad.webp 1x, ./img/ipad@2x.webp 2x"
@@ -322,7 +322,7 @@
             />
             <img src="./img/ipad.png" alt="control panel banner" />
           </picture>
-          <div>
+          <div data-aos="fade-up">
             <div class="media">
               <div class="media-image">
                 <svg class="icon icon-primary">
@@ -375,7 +375,7 @@
       </div>
     </section>
 
-    <section class="container block">
+    <section class="container block" data-aos="zoom-in">
       <header class="block-header">
         <h2 class="block-title">What our Customers are Saying</h2>
         <p>
@@ -530,7 +530,10 @@
         </div>
       </div>
     </footer>
+    <script src="./JS/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-
-  <script src="./JS/main.js"></script>
 </html>
