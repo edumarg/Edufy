@@ -228,7 +228,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -317,6 +317,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -777,8 +778,7 @@ a {
 /* Domain block */
 
 .block-domain .input-group {
-  display: inherit;
-  flex-wrap: wrap;
+  display: flex;
   margin: 4rem auto;
   max-width: 360px;
   overflow: hidden;
@@ -879,6 +879,11 @@ a {
 
 /* Footer */
 
+.footer {
+  background: #232323;
+  padding-top: 10rem;
+}
+
 .footer-brand {
   margin-top: 5rem;
   text-align: center;
@@ -901,11 +906,17 @@ a {
   color: white;
 }
 
+.footer-brand img {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .footer-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+
   .footer-brand {
+    margin-top: 1.5rem;
     order: -1;
   }
 
@@ -918,14 +929,12 @@ a {
   }
 
   .footer .collapsible-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .footer .collapsible-content {
-    display: flex;
     font-size: 1.5rem;
     max-height: 100%;
     opacity: 1;
-    width: auto;
   }
 }
